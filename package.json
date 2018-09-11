@@ -1,0 +1,24 @@
+{
+  "name": "peleteria",
+  "version": "1.0.0",
+  "description": "La peleteria atlas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErickRosete/peleteria.git"
+  },
+  "author": "Erick Rosete / Oscar Rosete",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErickRosete/peleteria/issues"
+  },
+  "homepage": "https://github.com/ErickRosete/peleteria#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "open": "0.0.5"
+  }
+}

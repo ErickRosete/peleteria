@@ -1,1 +1,77 @@
 <% include ./partials/header %>
+
+<div class="container justify-content-center">
+
+    <div id="sello-image" class="my-5">
+        <div class="transbox container-fluid">
+            <h1>Servicios</h1>
+        </div>
+    </div>
+
+    <div class="card-deck my-5">
+        <div class="card">
+            <img class="card-img-top" src="assets/services/shoe_leather.jpg" style="height:300px">
+            <div class="card-body">
+                <h5 class="card-title text-center">Reparación de calzado</h5>
+                <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p> -->
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="assets/services/leather_handbag.jpg" style="height:300px">
+            <div class="card-body">
+                <h5 class="card-title text-center">Reparación de bolsas para dama, maletas de viaje y portafolio</h5>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="assets/services/Saddlery.jpg" style="height:300px">
+            <div class="card-body">
+                <h5 class="card-title text-center">Taller de Talabartería</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-deck m-5">
+            <div class="card mx-5">
+                <img class="card-img-top" src="assets/services/hat_leather.jpg" style="height:300px">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Limpieza y Hormado de Sombreros</h5>
+                </div>
+            </div>
+            <div class="card mx-5">
+                <img class="card-img-top" src="assets/services/upholstery_leather.jpg" style="height:300px">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Taller de Tapiceria</h5>
+                </div>
+            </div>
+        </div>
+</div>
+
+<style>
+    #sello-image {
+        background-image: url("assets/services/services.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        min-height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        text-align: center;
+    }
+
+    div.transbox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    div.transbox h1 {
+        font-weight: bold;
+        color: #000000;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 500%;
+    }
+</style>

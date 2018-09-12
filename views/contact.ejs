@@ -1,3 +1,87 @@
 <%- include("./partials/header",{my_title : "Contacto"}) %>
+<!--==================MAP=============================-->
+<section class="map" style="padding:20px">
+    <div class="mapouter" style="margin:0 auto;">
+        <div class="gmap_canvas">
+            <iframe width="1000" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=peleteria%20atlas&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
+        </div>
+        <style>.mapouter{text-align:right;height:500px;width:1000px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1000px;}</style>
+    </div>
+</section>
+<!--================Contact Us Area =================-->
+ <section class="contact_us_area">
+    <div class="container">
+        <div class="contact_details_inner">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="contact_form">
+                        <div class="main_title">
+                            <h2>Contactanos!</h2>
+                            <p>Llena la forma ubicada en el inferior para contactarnos</p>
+                        </div>
+                        <form class="contact_us_form row" method="post" id="contactForm" onsubmit="return enviar()">
+                            <div class="form-group col-lg-12">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Correo Electronico" required>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Telefono" required>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <textarea class="form-control" name="message" id="message" rows="3" placeholder="Mensaje" required></textarea>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <button type="submit" value="submit" class="btn submit_btn2 form-control">Enviar Mensaje</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================Contact Success and Error message Area =================-->
+<div id="success" class="modal modal-message fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fa fa-close"></i>
+                    </button>
+                    <h2>Muchas gracias</h2>
+                    <p>Tu mensaje ha sido enviado exitosamente...</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+<!-- Modals error -->
+
+<div id="error" class="modal modal-message fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-close"></i>
+                </button>
+                <h2>Sorry !</h2>
+                <p> Something went wrong </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- https://www.embedgooglemap.net/ -->
+
+<!--================End Contact Us Area =================-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/vendors/jquery-3.2.1.min.js"></script>
+<script src="js/vendors/popper.min.js"></script>
+<script src="js/vendors/bootstrap.min.js"></script>
+<script src="https://smtpjs.com/v2/smtp.js"></script>
+<script src="js/vendors/jquery.mask.js"></script>
+<script src="js/contact.js"></script>
 <% include ./partials/footer %>

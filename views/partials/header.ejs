@@ -7,7 +7,8 @@
     <!-- <title>Main</title> -->
     <title><%- my_title %></title>
     <!-- Icon css link -->
-    <link rel="stylesheet" href="/stylesheets/vendors/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="/stylesheets/vendors/font-awesome.min.css"> -->
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <!-- vendors -->
@@ -17,32 +18,56 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <style>
+    .navbar{
+        /* position: fixed;  */
+        /* Set the navbar to fixed position */
+        /* top: 0;  */
+        /* Position the navbar at the top of the page */
+        /* width: 100%;  */
+        /* Full width */
+        /* z-index: 2; */
+
+    }
+    body { padding-top: 50px; }
+        @media screen and (max-width: 768px) {
+        body { padding-top: 0px; }
+    }
+   
 
 </style>
 <body style="background-image:url(assets/wildtextures-leather-Campo-walnut.jpg)">
 <!-- boilerplate inserted with !emmet -->
-<nav class="navbar navbar-expand-lg navbar-dark /*bg-dark*/" style="background-color: rgb(54,27,0)">
+<nav class="navbar fixed-top navbar-expand-lg p-0" style="background-color: rgb(54,27,0)">
     <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse" id="navbar10">
-            <img class="navbar-brand" src="assets/handwritten.jpg" alt="logo" style="height:80px;">
+            <!-- <a href="/"><img class="navbar-brand p-0" src="assets/Logo.jpg" alt="logo" style="height:80px;"></a> -->
             <ul class="navbar-nav nav-fill w-100" style="font-size:1.5rem">
-                <li class="nav-item text-white">
-                    <a class="nav-link text-white" href="#">Link</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="/"style="color: #ffc20e;"> Peleteria Atlas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="/products">Productos</a>
+                    <a class="nav-link" href="/about"><i class="fas fa-info-circle"></i> ¿Quienes somos?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="/services">Servicios</a>
+                    <a class="nav-link" href="/products"><i class="fas fa-store"></i> Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="/contact">Contacto</a>
+                    <a class="nav-link" href="/services"><i class="fas fa-archive"></i> Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Eng/Spanish</a>
+                    <a class="nav-link" href="/contact"><i class="fas fa-user"></i> Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-globe-americas"></i> 
+                        <select>
+                            <option value="English">English</option>
+                            <option value="Español">Español</option>
+                        </select>
+                    </a>
                 </li>
             </ul>
         </div>

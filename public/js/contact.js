@@ -10,21 +10,43 @@ function enviar(){
     body+= "<div style='display:block'>"+"<span style='font-weight:bold'>Telefono </span>"+document.getElementsByName("phone")[0].value+"</div>";
     body+= "<div style='display:block'>"+"<span style='font-weight:bold'>Mensaje </span>"+document.getElementsByName("message")[0].value+"</div></div><a style='display:block;font-size:20px;cursor:pointer;text-align:center;text-decoration:none;color:black;margin-top:10px;'href='http://peleteriaatlas.com/'>http://peleteriaatlas.com/</a></body>";
     console.log(body);
+    // Email.send(
+    //     "noreply@peleteria-atlas.com",
+    //     // "oscaralonso11@gmail.com",ivloanagent@gmail.com
+    //     "oscaralonso11@gmail.com",
+    //     "Mensaje de website peleteria",
+    //     body,
+    //     {
+    //         token: "5ad8ca6d-c9a2-492a-93c9-e38b0e21d42d",
+    //         callback: function done(message) {
+    //             // alert("Thank you\nyour message was sent") ;
+    //             $('#success').modal('show');
+    //         return true;}
+    //     }
+    // );
     Email.send(
-        "noreply@peleteria-atlas.com",
-        // "oscaralonso11@gmail.com",ivloanagent@gmail.com
+        "noreply@peleteriaatlas.com",
         "oscaralonso11@gmail.com",
         "Mensaje de website peleteria",
         body,
-        {
-            token: "5ad8ca6d-c9a2-492a-93c9-e38b0e21d42d",
-            callback: function done(message) { 
-                // alert("Thank you\nyour message was sent") ;
-                $('#success').modal('show');
-            return true;}
+        "smtp.elasticemail.com",
+        "oscaralonso11@gmail.com",
+        "ee87cb43-1e87-4c5f-974e-3cb5d19ab7f0",
+        function done(message) {
+            $('#success').modal('show');
         }
     );
-    // alert("email was sent")
-    // setTimeout(function(){ alert("Hello"); }, 4000);
     return false;
 }
+// elasticemail.com
+// oscaralonso11@gmail.com
+// Ashanti123
+
+// smtp
+// user:oscaralonso11@gmail.com
+// password:ee87cb43-1e87-4c5f-974e-3cb5d19ab7f0
+// servidor:smtp.elasticemail.com
+// puerto:2525
+// https://elasticemail.com/account/#/settings/smtp
+// como seleccionar el sensor en cuestion de parametro como, martes presentar o viernes presentar
+//puede ser simulacion, problematica del dia a dia

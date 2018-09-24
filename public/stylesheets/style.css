@@ -1,6 +1,31 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+.nav-link{
+    color:white;
+}
+.nav-link:hover{
+    color: #ffc20e;
+}
+
+.card{
+    border-color:rgb(54,27,0);
+    color:#fff;
+}
+.card-body{
+    background-color: rgb(54,27,0);
+}
+.card-section__title{
+    color: #ffc20e;
+}
+.card-section__title:hover{
+    color: #ffc20e;
+}
+.card-section__body{
+    text-align: justify;
+    margin-bottom: 0;   
+}
 .plus{
     background-repeat:no-repeat;
     background-position: center center;  -webkit-background-size: cover;
@@ -36,6 +61,129 @@ body{
     line-height: 40px;
 }
 
+.f_w_title {
+    padding-bottom: 25px;
+  }
+  
+  .f_w_title h3 {
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  categories_widget {
+    margin-left: 70px;
+  }
+  
+  .categories_widget ul {
+    width: calc(100% / 2);
+    float: left;
+    margin-top: -4px;
+  }
+  
+  .categories_widget ul li a {
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Muli', sans-serif;
+    line-height: 36px;
+    -webkit-transition: all 400ms linear 0s;
+    -o-transition: all 400ms linear 0s;
+    transition: all 400ms linear 0s;
+  }
+  
+  .categories_widget ul li a i {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    -webkit-transition: all 400ms linear 0s;
+    -o-transition: all 400ms linear 0s;
+    transition: all 400ms linear 0s;
+  }
+ 
+  .categories_widget ul li:hover a {
+    padding-left: 15px;
+    color: #ffc20e;
+  }
+  
+  .categories_widget ul li:hover a i {
+    opacity: 1;
+  }
+  .subscribe_widget p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #b5aec4;
+    font-weight: 300;
+    font-family: 'Muli', sans-serif;
+    padding-bottom: 20px;
+  }
+  
+  .subscribe_widget .input-group input {
+    background: #2b2e3d;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #b5aec4;
+    font-family: 'Muli', sans-serif;
+    padding: 0px 15px;
+  }
+  
+  .subscribe_widget .input-group input.placeholder {
+    font-size: 12px;
+    color: #b5aec4;
+    font-family: 'Muli', sans-serif;
+  }
+  
+  .subscribe_widget .input-group input:-moz-placeholder {
+    font-size: 12px;
+    color: #b5aec4;
+    font-family: 'Muli', sans-serif;
+  }
+  
+  .subscribe_widget .input-group input::-moz-placeholder {
+    font-size: 12px;
+    color: #b5aec4;
+    font-family: 'Muli', sans-serif;
+  }
+  
+  .subscribe_widget .input-group input::-webkit-input-placeholder {
+    font-size: 12px;
+    color: #b5aec4;
+    font-family: 'Muli', sans-serif;
+  }
+  
+  .subscribe_widget ul {
+    padding-top: 30px;
+  }
+  
+  .subscribe_widget ul li {
+    display: inline-block;
+    margin-right: 32px;
+  }
+  
+  .subscribe_widget ul li a {
+    font-size: 14px;
+    color: #b5aec4;
+    -webkit-transition: all 400ms linear 0s;
+    -o-transition: all 400ms linear 0s;
+    transition: all 400ms linear 0s;
+  }
+  
+  .subscribe_widget ul li:hover a {
+    color: #ffc20e;
+  }
+  
+  .subscribe_widget ul li:last-child {
+    margin-right: 0px;
+  }
 /*============================================================================================ */
 /* Contact Success and error Area css
 ============================================================================================ */

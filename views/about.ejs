@@ -1,0 +1,149 @@
+<%- include("./partials/header",{my_title : "¿Quienes somos?"}) %>
+<style>
+    .centered{
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        /* transform: translateY(-50%); */
+        position:relative;
+        /* display:block */
+        /* width:; */
+    }
+</style>
+<div class="row justify-content-center">
+    <div class="card" style="width: 70vw; border:none;background-color: rgb(54,27,0);">
+        <div class="row m-0" >
+            <div class="col-6 p-3" >
+                <img class="centered img-fluid" src="assets/handwritten.jpg" alt="imagen a mano">
+            </div>
+            <div class="col-6 pl-0 pt-3 pb-3 pr-3">
+                <h5 class="card-title">Una empresa de tradicion</h5>
+                <p class="card-section__body">
+                    Peletería atlas con mas de 60 años de trascendencia en nuestro negocio, seguimos siendo un referente a nuestros clientes, brindando soluciones  a sus necesidades con la especialidad que nos distingue.
+                </p>
+                <p class="card-section__body">
+                    Contamos con el más completo taller de talabartería marroquinería, tapicería y pintura a todo producto de piel, desarrollamos cualquier proyecto que usted desee en piel, baqueta, lona o sintéticos.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="width: 70vw; border:none">
+        <div class="card-body">
+            <h5 class="card-title text-center mb-4"style="font-size:2rem">
+                Productos y Servicios
+            </h5>
+            <div class="row mb-5">
+                <div class="col-4">
+                    <a href="/products" class="card-section__title text-center"><h4><i class="fas fa-store" aria-hidden="true"></i> Comercio</h4></a>
+                    <p class="card-section__body">
+                        Una extensa línea de artículos de piel para dama y caballero como son, carteras y porta documentos de bolsillo, bolsos para dama, agendas y portafolios, cinturones en piel y baqueta de res, hebillas vaqueras y de vestir. Todo esto se maneja también de mayoreo y con gravados personalizados.
+                    <p>
+                </div>
+                <div class="col-4">
+                    <a href="/products" class="card-section__title text-center"><h4><i class="fas fa-industry" aria-hidden="true"></i> Industria</h4></a>
+                    <p class="card-section__body">
+                        Fabricamos equipo de seguridad industrial como: cinturones de seguridad, mandiles, petos, polainas y chaparreras de carnaza, fundas de baqueta para cualquier herramienta punzo-cortante, bandas, soportes y empaques en distintos materiales como baqueta sillero, centro y delantero, hule neolite, neopreno, nitreno, espuma microporoso y evas.
+                    </p>
+                </div>
+                <div class="col-4">
+                    <a href="/products" class="card-section__title text-center"><h4><i class="fas fa-home" aria-hidden="true"></i> Hogar</h4></a>
+                    <p class="card-section__body">
+                        Servicio de tapicería nueva y reparación a muebles de sala y automotriz, piel y sintéticos, limpieza y retoque con pintura o cambio de color.
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-container mb-5"style="width: 100%">
+                <div class="swiper-wrapper">
+                    <!-- swiper-slide1 -->
+                    <div class="swiper-slide plus" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(assets/gallery/g1.jpg); /*filter: brightness(50%);background: rgba(0,0,0,0.7);opacity: 0;*/ ">
+                        <div class="container centered">
+                            <div class="row justify-content-md-center">
+                                <div class="col-md-12">
+                                    <p class="banner-text text-white text-center" style=" color: #FFF;">
+                                        Titulo
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-md-center mb-0">
+                                <div class="col-12">
+                                    <p class="subbanner-text text-white text-center" >
+                                        Subtitulo
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end swiper-slide1 -->
+                    <!-- swiper-slide2 -->
+                    <div class="swiper-slide plus" style="background-image: url(assets/gallery/g2.jpg); ">
+                    </div>
+                    <!-- end swiper-slide2 -->
+                     <!-- swiper-slide3 -->
+                     <div class="swiper-slide plus" style="background-image: url(assets/gallery/g3.jpg); ">
+                     </div>
+                     <!-- end swiper-slide3 -->
+                      <!-- swiper-slide4 -->
+                    <div class="swiper-slide plus" style="background-image: url(assets/gallery/g4.jpg); ">
+                    </div>
+                    <!-- end swiper-slide4 -->
+                     <!-- swiper-slide5 -->
+                     <div class="swiper-slide plus" style="background-image: url(assets/gallery/g5.jpg); ">
+                     </div>
+                     <!-- end swiper-slide5 -->
+                     <!-- swiper-slide6 -->
+                     <div class="swiper-slide plus" style="background-image: url(assets/gallery/g6.jpg); ">
+                     </div>
+                     <!-- end swiper-slide6 -->
+                      <!-- swiper-slide7-->
+                      <div class="swiper-slide plus" style="background-image: url(assets/gallery/g7.jpg); ">
+                      </div>
+                      <!-- end swiper-slide7-->
+                    <!-- swiper-slide8 -->
+                     <div class="swiper-slide plus" style="background-image: url(assets/gallery/g8.jpg); ">
+                     </div>
+                     <!-- end swiper-slide8 -->
+                    <!-- swiper-slide9 -->
+                    <div class="swiper-slide plus" style="background-image: url(assets/gallery/g9.jpg); ">
+                    </div>
+                    <!-- end swiper-slide9 -->
+                    <!-- swiper-slide10 -->
+                    <div class="swiper-slide plus" style="background-image: url(assets/gallery/g10.jpg); ">
+                    </div>
+                    <!-- end swiper-slide10 -->
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-6">
+                    <a href="/products" class="card-section__title"><h4><i class="fas fa-couch" aria-hidden="true"></i>Líneas clásicas:</h4></a>
+                    <p class="card-section__body">
+                        Todo lo relacionado en artículos de bolería para la conservación de su calzado.  Materiales, herramientas y maquinaria para talleres de reparación de calzado, talabarteros, tapiceros y marroquineros.Pieles, herrajes y todos los suplementos para su confección Amplio inventario en equipo de talabartería para charros y vaqueros.Todo un mosaico de color en artesanías típicas mexicanas como recuerdo de esta región.
+                    <p>
+                </div>
+                <div class="col-6">
+                <a href="/products" class="card-section__title"><h4><i class="fas fa-cut" aria-hidden="true"></i> Centro de servicios a clientes:</h4></a>
+                    <p class="card-section__body">
+                        <ul>
+                            <li>La más completa reparación de calzado</li>
+                            <li>Trabajos ortopédicos</li>
+                            <li>Sastrería, limpieza y pintura a chamarras de piel</li>
+                            <li>Limpieza y hormado de sombreros de fieltro</li>
+                            <li>Reparación de bolsos de dama, portafolios y maletas de viaje</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- swiper/caroussel -->
+<script src="/js/vendors/swiper.min.js"></script>
+<script src="/js/vendors/css3-animate-it.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
+<% include ./partials/footer %>

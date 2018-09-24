@@ -21,34 +21,37 @@ function activateSwipers() {
         var pagination = document.querySelectorAll(".swiper-pagination")[index];
         pagination.className += " pag-" + index;
         //=============================swiper de banners======//
+        // https://github.com/zefoy/ngx-swiper-wrapper/issues/44
         if (index == 0){
             console.log("si entre")
             var este = element;
             //console.log(button);
             var swiper = new Swiper(".instance-" + index, {
-                spaceBetween: 0,
                 effect: 'fade',
                 loop: true,
                 slidesPerView: 1,
                 centeredSlides: true,
-                // spaceBetween: 30,
-                // autoplay: {
-                //     enabled: true,
-                //     delay: 2500,
-                //     disableOnInteraction: false,
+                spaceBetween: 0,
+                // pagination: {
+                //     el: '.swiper-pagination.pag-' + index,
+                //     clickable: true,
                 // },
-                pagination: {
-                    el: '.swiper-pagination.pag-' + index,
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next.btn-next-' + index,
-                    prevEl: '.swiper-button-prev.btn-prev-' + index,
-                }
+                // navigation: {
+                //     nextEl: '.swiper-button-next.btn-next-' + index,
+                //     prevEl: '.swiper-button-prev.btn-prev-' + index,
+                // }
+                nextButton: '.swiper-button-next.btn-next-' + index,
+                prevButton:'.swiper-button-prev.btn-prev-' + index,
+                pagination: '.swiper-pagination.pag-' + index,
             });
             console.log("este es el swiper "+index)
             console.log(swiper);
+            console.log(swiper.navigation)
+        }
+        else{
+            console.log("wtf")
         }
     })
+    console.log(swipers)
 }
 activateSwipers();

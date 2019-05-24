@@ -1,13 +1,15 @@
 <%- include(header,{my_title}) %>
-<% if(cssFile!="") { %>
-    <%-include(cssFile)%>
-<% } %>
-<body style="background-image:url(assets/wildtextures-leather-Campo-walnut.jpg)">
-    <%-include(navbar)%>
-    <%-include(content)%>
-    <%-include(footer) %>
-    <% if (scriptFile!="") { %>
-        <%-include(scriptFile) %>
-    <% } %>
-</body>
-</html>
+    <% if(cssFile!="") { %>
+        <%-include(cssFile)%>
+            <% } %>
+
+                <body class="custom_body">
+                    <%-include(navbar)%>
+                        <%-include(content)%>
+                            <%-include(footer) %>
+                                <% if (scriptFile!="") { %>
+                                    <%-include(scriptFile) %>
+                                        <% } %>
+                </body>
+
+                </html>

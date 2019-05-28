@@ -7,3 +7,44 @@
     /* display:block */
     /* width:; */
 }
+
+.about h1{
+    margin: 2rem 0;
+}
+
+.about-description h2{
+    text-align: center;
+}
+
+.about-description {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column
+}
+
+.ofrecemos{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.ofrecemos_carousel{
+    padding: 0 2rem 1rem 2rem;
+}
+
+.carousel-inner > .carousel-item > img {
+    width:100%;
+    height:60vh;
+  }
+
+  
+@media screen and (min-width: 768px) {
+    .about-description{
+        padding: 1rem 4rem 1rem 5rem;
+    }
+    .ofrecemos_carousel{
+        padding: 2rem;
+    }
+}

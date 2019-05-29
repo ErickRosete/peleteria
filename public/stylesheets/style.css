@@ -1,9 +1,4 @@
 
-@media screen and (min-width: 768px) {
-    main{
-        margin-top:70px;
-    }
-}
 
 main {
     margin-top: 56px;
@@ -25,7 +20,7 @@ h2 {
     font-weight: 700;
 }
 
-h3{
+h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 700;
@@ -72,12 +67,21 @@ h3{
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
+
 /*************Navbar****************/
 
 .banner-img {
     background: black;
     width: 100%;
     min-height: auto;
+}
+
+.banner-img-mobil {
+    display: block;
+}
+
+.banner-img-pc {
+    display: none;
 }
 
 .landing_content {
@@ -87,16 +91,16 @@ h3{
 .landing-title {
     /*background: #f0efec;*/
     background: #1e0a01;
-    color:white;
+    color: white;
     width: 100%;
-    padding: 0rem;
+    padding-top: 0.5rem;
     text-align: center;
 }
 
-.landing-title h2{
+.landing-title h2 {
     font-size: 3.5rem;
     font-weight: 300;
-    padding:0rem 2rem 1rem 2rem;
+    padding: 0rem 2rem 1rem 2rem;
 }
 
 .landing-description {
@@ -119,6 +123,10 @@ h3{
     align-content: center;
     text-align: center;
     align-items: center;
+}
+
+.carousel_landing{
+    padding: 1rem 1rem 2rem 1rem;
 }
 
 /********** swippers ***************/
@@ -145,34 +153,6 @@ h3{
     margin-bottom: 0;
 }
 
-.plus {
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    text-decoration: none !important;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
-
-.swiper-container {
-    cursor: pointer;
-    width: 100%;
-    height: 475px;
-}
-
-.plus:hover {
-    opacity: 0.6;
-}
-
-.parent img {
-    height: 100%;
-    width: 100%;
-}
 
 .banner-text {
     padding: 1rem;
@@ -190,6 +170,7 @@ h3{
     display: block
 }
 
+
 /*************Footer****************/
 .footer-logo {
     background: #f0efec;
@@ -201,7 +182,7 @@ h3{
 }
 
 .footer-info {
-    padding: 2rem 3rem 1.5rem 3rem;
+    padding: 3rem 3rem 1.5rem 3rem;
     min-height: 20vh;
     font-family: 'Hind', sans-serif;
     font-weight: 300;
@@ -235,6 +216,7 @@ h3{
     font-weight: 700;
     padding-top: 0.5rem;
 }
+
 /*************Footer****************/
 
 /* Primary Styles */
@@ -263,4 +245,18 @@ em {
     justify-content: center;
     align-items: center;
     flex: 1;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        margin-top: 70px;
+    }
+
+    .banner-img-mobil {
+        display: none;
+    }
+
+    .banner-img-pc{
+        display:block;
+    }
 }

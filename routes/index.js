@@ -19,7 +19,7 @@ router.get('/products', function (req, res) {
     // res.render("products") 
     res.render("site",{
         header:"./partials/header",
-        cssFile:"./partialStylesheets/products",
+        cssFile:"./partialStylesheets/products.ejs",
         navbar:'./partials/navbar.ejs',
         content:'./partials/products.ejs',
         footer:'./partials/footer.ejs',
@@ -43,7 +43,7 @@ router.get('/services', function (req, res) {
 router.get('/contact', function (req, res) {
     res.render("site",{
         header:"./partials/header",
-        cssFile:"",
+        cssFile:"./partialStylesheets/contact.ejs",
         navbar:'./partials/navbar.ejs',
         content:'./partials/contact.ejs',
         footer:'./partials/footer.ejs',
@@ -55,7 +55,7 @@ router.get('/contact', function (req, res) {
 router.get('/about', function (req, res) {
     res.render("site",{
         header:"./partials/header",
-        cssFile:"./partialStylesheets/about",
+        cssFile:"./partialStylesheets/about.ejs",
         navbar:'./partials/navbar.ejs',
         content:'./partials/about.ejs',
         footer:'./partials/footer.ejs',

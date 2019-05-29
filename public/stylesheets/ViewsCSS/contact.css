@@ -4,7 +4,39 @@
 
 /* End Contact Success and error Area css
 ============================================================================================ */
+section.contact_us_area {
+    margin-top: 56px;
+    font-family: 'Hind', sans-serif;
+    font-weight: 300;
+    font-size: 1.15rem;
+}
 
+.contact_details_inner {
+    padding: 2rem 0 1.5rem 0;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: baseline;
+    color:black;
+}
+.strong{font-weight: bold;}
+.informacion a{ color:black}
+.informacion a:hover{
+    color: #b28735;
+    text-decoration: none;
+}
+
+.informacion h1 {
+    padding: 3rem 0 1rem 0;
+}
+
+.informacion p {
+    padding: 0.5rem 0;
+}
 
 .modal-message .modal-dialog {
     position: absolute;
@@ -45,4 +77,10 @@
 
 .modal-message .modal-dialog .modal-content .modal-header p {
     display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .informacion h1 {
+        padding: 0 0 4rem 0;
+    }
 }

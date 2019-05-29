@@ -7,6 +7,13 @@ main {
     font-size: 1.15rem;
 }
 
+.main-content{
+    margin-top: 56px;
+    font-family: 'Hind', sans-serif;
+    font-weight: 300;
+    font-size: 1.15rem;
+}
+
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
@@ -43,6 +50,20 @@ h3 {
     color: white;
 }
 
+.btn.btn-dark{
+    font-size: 1.2rem;
+    display:block;
+    margin:auto;
+}
+
+.main-top-titles{
+    background: #412f26;
+    color:white;
+    text-align: center;
+    padding:1.2rem 0;
+    display: flex;
+    justify-content: center;
+}
 /*************Navbar****************/
 .navbar {
     position: fixed;
@@ -67,6 +88,24 @@ h3 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
+
+.languaje_control{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1rem;
+    color: rgba(255,255,255,.5);
+}
+.navbar_languaje-picker {
+    flex-wrap: wrap;
+    display: block;
+    margin: auto;
+    padding: 0 0.5rem 0 0.2rem;
+    background: black;
+    color:rgba(255,255,255,.5);
+    border: 0;
+}
+
 
 /*************Navbar****************/
 
@@ -217,6 +256,9 @@ h3 {
     padding-top: 0.5rem;
 }
 
+.footer-mobil-hide{
+    display:none;
+}
 /*************Footer****************/
 
 /* Primary Styles */
@@ -248,15 +290,13 @@ em {
 }
 
 @media screen and (min-width: 768px) {
-    main {
-        margin-top: 70px;
-    }
-
     .banner-img-mobil {
         display: none;
     }
-
     .banner-img-pc{
+        display:block;
+    }
+    .footer-mobil-hide{
         display:block;
     }
 }

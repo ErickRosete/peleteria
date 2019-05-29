@@ -1,68 +1,80 @@
-var base= 'https://peleteria-admin.herokuapp.com/';
-
-$.ajax({
-    url: base+'api/categories',
-    context: document.body
-}).done(function(response) {
-    // $( this ).addClass( "done" );
-    console.log(response);
-});
-$(document).ready(function() {
-     /* code here */
-    
-});
-
-function actualizaContenido(infoNecesaria){
-    console.log("Contenido actualizado");
-    var contenedor=document.querySelector("#contenido")
-    var elementosGenerados=[]
-    infoNecesaria.forEach(function(producto){
-        var elemento=document.querySelector("#placeholder").cloneNode(true)
-        elemento.children[0].src=producto.imagen
-        elemento.children[1].children[0].innerText=producto.texto
-        elemento.style="display:''"
-        elementosGenerados.push(elemento)
-    })
-    contenedor.innerHTML=""
-    elementosGenerados.forEach(function(elemento){
-        contenedor.appendChild(elemento)
-    })
-    // console.log(elementosGenerados)
-}
-
-$.ajax({
-    url: base+'api/products',
-    context: document.body
-}).done(function(response) {
-    console.log(response);
-    var infoNecesaria=response.map(function (item) {
-        return {texto: item.title, imagen: item.imagen};
-    })
-    actualizaContenido(infoNecesaria)
-});
-
-$(document).ready(function() {
-     /* code here */
-    
-});
-
-function categoria(element){
-    console.log("this is a click")
-    console.log(element.children[1].innerText)
-    var filtro=element.children[1].innerText
-    var imagenes=document.querySelectorAll(".card-img-top")
-    var textos=document.querySelectorAll(".card-title")
-    $.ajax({
-        url: base+'api/products?category__in='+filtro,
-        context: document.body
-    }).done(function(response) {
-        console.log(response);
-        var infoNecesaria=response.map(function (item) {
-            return {texto: item.title, imagen: item.imagen};
-        })
-        actualizaContenido(infoNecesaria)
+$(document).ready(function () {
+    $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
     });
-}
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+    });
+});
+
+// var base= 'https://peleteria-admin.herokuapp.com/';
+
+// $.ajax({
+//     url: base+'api/categories',
+//     context: document.body
+// }).done(function(response) {
+//     // $( this ).addClass( "done" );
+//     console.log(response);
+// });
+// $(document).ready(function() {
+//      /* code here */
+    
+// });
+
+// function actualizaContenido(infoNecesaria){
+//     console.log("Contenido actualizado");
+//     var contenedor=document.querySelector("#contenido")
+//     var elementosGenerados=[]
+//     infoNecesaria.forEach(function(producto){
+//         var elemento=document.querySelector("#placeholder").cloneNode(true)
+//         elemento.children[0].src=producto.imagen
+//         elemento.children[1].children[0].innerText=producto.texto
+//         elemento.style="display:''"
+//         elementosGenerados.push(elemento)
+//     })
+//     contenedor.innerHTML=""
+//     elementosGenerados.forEach(function(elemento){
+//         contenedor.appendChild(elemento)
+//     })
+//     // console.log(elementosGenerados)
+// }
+
+// $.ajax({
+//     url: base+'api/products',
+//     context: document.body
+// }).done(function(response) {
+//     console.log(response);
+//     var infoNecesaria=response.map(function (item) {
+//         return {texto: item.title, imagen: item.imagen};
+//     })
+//     actualizaContenido(infoNecesaria)
+// });
+
+// $(document).ready(function() {
+//      /* code here */
+    
+// });
+
+// function categoria(element){
+//     console.log("this is a click")
+//     console.log(element.children[1].innerText)
+//     var filtro=element.children[1].innerText
+//     var imagenes=document.querySelectorAll(".card-img-top")
+//     var textos=document.querySelectorAll(".card-title")
+//     $.ajax({
+//         url: base+'api/products?category__in='+filtro,
+//         context: document.body
+//     }).done(function(response) {
+//         console.log(response);
+//         var infoNecesaria=response.map(function (item) {
+//             return {texto: item.title, imagen: item.imagen};
+//         })
+//         actualizaContenido(infoNecesaria)
+//     });
+// }
     // if(element.children[1].innerText=="Portafolios"){
     //     console.log("caso portafolio")
     //     console.log(imagenes)

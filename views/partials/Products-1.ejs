@@ -1,0 +1,62 @@
+<div class="s-layout">
+    
+    <!-- Sidebar -->
+    <div class="s-layout__sidebar">
+      <a class="s-sidebar__trigger" href="#0">
+         <i class="fa fa-bars"></i>
+      </a> 
+      <nav class="s-sidebar__nav">
+         <ul>
+            <li>
+               <a class="s-sidebar__nav-link" data-toggle="collapse" href="#collapseExample" role="button">
+                <i class="fa fa-shoe-prints"></i><em>Suelas</em>
+               </a>
+               <ul class="collapse" id="collapseExample">
+                    <li>
+                        <a class="s-sidebar__nav-link" >
+                            <i class="fa fa-shoe-prints"></i><em>Suelas</em>
+                        </a>
+                    </li>
+               </ul>
+            </li>
+            <li>
+               <a class="s-sidebar__nav-link"  onclick="categoria(this)">
+                 <i class="fa fa-briefcase"></i><em>Portafolios</em>
+               </a>
+            </li>
+            <li>
+               <a class="s-sidebar__nav-link"  onclick="categoria(this)">
+                  <i class="fa fa-wallet"></i><em>Carteras</em>
+               </a>
+            </li>
+         </ul>
+      </nav>
+    </div>
+
+    <!-- /main sidebar -->
+    <div class="content-wrapper">
+        <div class="row clearfix">
+            <div class="col-xs-12">
+                <h2>Hello World</h2>
+            </div> <!-- end col -->
+        </div> <!-- end row -->
+    </div> <!-- end content-wrapper -->
+
+    
+    <!-- Placeholder of a product -->
+    <%-include("./product.ejs",{
+        imagen:"assets/briefcases/bc4.jpg",
+        descripcion:"Limpieza y reparacion de portafolios"
+    })%>
+
+    <!-- Content -->
+    <main class="s-layout__content">
+        <div class="container justify-content-center">
+            <div id="contenido" class="card-deck justify-content-center my-5">
+            </div>
+        </div>
+    </main>
+    
+</div>
+
+

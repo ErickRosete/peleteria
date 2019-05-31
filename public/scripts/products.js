@@ -1,11 +1,6 @@
 $(document).ready(function () {
-    $("#sidebar").mCustomScrollbar({
-        theme: "minimal"
-    });
-
     $('#sidebarCollapse').on('click', function () {
-        $('#sidebar, #products_content,.collapse-btn-container').toggleClass('active');
-        $('.collapse.in').toggleClass('in');
+        $('#sidebar, #products_content,.collapse-btn-container,.sidebar-bg').toggleClass('active');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
     });
 });

@@ -3,6 +3,11 @@ $(document).ready(function () {
         $('#sidebar, #products_content,.collapse-btn-container,.sidebar-bg').toggleClass('active');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
     });
+    if(window.innerWidth > 600){
+        $('#sidebar, #products_content,.collapse-btn-container,.sidebar-bg').toggleClass('active');
+    }
+    $('.nav-item.active').removeClass('active');
+    $('#navbarNav-products').addClass('active');
 });
 
 // var base= 'https://peleteria-admin.herokuapp.com/';

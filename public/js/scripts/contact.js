@@ -1,6 +1,9 @@
 $(document).ready(function(){
-    $('#phone').mask('(000) 000-0000');
+    // $('#phone').mask('(000) 000-0000');
+    $('.nav-item.active').removeClass('active');
+    $('#navbarNav-contact').addClass('active');
 })
+
 function enviar(){
     console.log(document.getElementsByName("name")[0].validity.valid)
     console.log("you clicked")

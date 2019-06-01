@@ -8,8 +8,6 @@ const morgan=require("morgan")
 const bodyParser=require("body-parser")
 
 
-
-
 //settings
 // APP. SET VAMOS A AMACENARLE EL PUERTO (REVISAR SI EL SERVIDOR 
 // TIENE UN PUERTO DEFINIDO SINO EL PUERTO SERA 3000

@@ -35,7 +35,7 @@ router.get('/services', function (req, res) {
         navbar:'./partials/navbar.ejs',
         content:'./partials/services.ejs',
         footer:'./partials/footer.ejs',
-        scriptFile:'',
+        scriptFile:'./scriptPartials/services.ejs',
         my_title: "Servicios"
     })
 });

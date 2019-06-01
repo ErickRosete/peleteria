@@ -2,21 +2,23 @@
   background: #f0efec;
   border-right: 0.25rem solid rgb(0, 0, 0, 1);
   display: block;
-  overflow: hidden;
 
-  height: 100%;
   min-width: 40vw;
   position: absolute;
   z-index: 800;
 
   transform: translateX(0);
   transition: all 0.5s ease-out;
+
+  position: fixed;
+  height: calc(100vh - 56px);
+  top: 56px;
 }
 
 #sidebar.active {
   background: transparent;
   border: none;
-  transform: translateX(-30vw);
+  transform: translateX(-28vw);
 }
 
 #sidebar.active .sidebar-info {
@@ -26,13 +28,17 @@
 .sidebar-bg {
   z-index: 750;
   width: 100%;
-  position: absolute;
+  position: fixed;
   background: rgb(0, 0, 0, 0.7);
   height: 100%;
-  display:block;  transition: all 0.5s ease-in;
+  display: block;
+  transition: all 0.5s ease-in;
+  top: 0;
+  left: 0;
 }
+
 .sidebar-bg.active {
-  display:none;
+  display: none;
 }
 
 .sidebar-complete {
@@ -61,6 +67,7 @@
 }
 
 .btn-collapse-top {
+  border-radius: 0.5rem;
   background: transparent;
   color: black;
   border: none;
@@ -70,6 +77,11 @@
 
   transition: color 0.5s linear;
   transition: background-color 0.25s linear;
+}
+
+#sidebar.active .btn-collapse-top {
+  background: white;
+  color:black;
 }
 
 .btn-collapse-top:hover {
@@ -86,7 +98,8 @@
 
 /***sidebar info ***/
 .sidebar-info {
-  overflow-y: scroll;
+  overflow-y: auto;
+  max-height: 80%;
   padding: 1rem;
 }
 
@@ -114,7 +127,6 @@
 
 /********* content products**************/
 #products_content {
-  margin-left: 0;
   position: relative;
   margin-left: 5vw;
   transition: all 0.5s ease-out;
@@ -171,34 +183,33 @@
   transform: translateY(0%);
 }
 
+.side-and-content {
+  display: flex;
+  flex-direction: row;
+}
+
 @media screen and (min-width: 768px) {
   #sidebar {
     background: #f0efec;
     border-right: 0.25rem solid rgb(0, 0, 0, 1);
     display: block;
-    overflow: hidden;
 
-    height: 100%;
+    height: unset;
     min-width: 15vw;
-    position: absolute;
-    transform: translateX(0);
-    transition: transform 0.5s ease-out;
+    position: relative;
+    transition: all 0.5s ease-out;
+    top: 0;
   }
 
   #sidebar.active {
-    position: absolute;
-    transform: translateX(-10vw);
+    transform: translateX(0);
+    margin-left: 1rem;
+    min-width: 5vw;
   }
 
   #products_content {
     margin-left: 0;
-    position: relative;
-    margin-left: 15vw;
     transition: all 0.5s ease-out;
-  }
-
-  #products_content.active {
-    margin-left: 5vw;
   }
   .sidebar-bg {
     display: none;

@@ -1,50 +1,68 @@
-#sello-image {
-    background-image: url("/assets/services/services.jpg");
-    background-attachment: fixed;
-    background-position: center bottom;
-    min-height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    text-align: center;
-}
-
-div.transbox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.5);
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    div.transbox h1 {
-        font-size: 450%
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    div.transbox h1 {
-        font-size: 475%
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    div.transbox h1 {
-        font-size: 500%
-    }
-}
-
-div.transbox h1 {
-    font-weight: bold;
-    color: #000000;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
 .service-card {
     max-width: 500px;
+    position: relative;
+}
+
+.card {
+    border: none;
+    color: #fff;
+}
+
+.card-body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title {
+    font-weight: bold;
+    font-family: 'Hind', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.over {
+    background: rgb(0,0,0,0.7);
+    width: 100%;
+    height: calc(100% - 70px);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+    opacity: 0;
+    top:0;
+    transform: translateY(0);
+    transition: all 0.3s linear;
+}
+
+.over:hover{
+    opacity: 1;
+    transform: translateY(72px);
+}
+
+.card-section__title {
+    color: #ffc20e;
+}
+
+.card-section__title:hover {
+    color: #ffc20e;
+}
+
+.card-section__body {
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.card-deck{
+    padding: 3rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .card-deck{
+        padding: 3rem;
+    }
 }

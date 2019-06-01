@@ -32,6 +32,12 @@ h3 {
     padding-bottom: 1rem;
 }
 
+h5 {
+    font-weight: 300;
+    font-family: 'Hind', sans-serif;
+    font-size: 1.25rem;
+}
+
 .bg-lightBrown {
     background: #f0efec;
 }
@@ -165,31 +171,7 @@ h3 {
     padding: 1rem 1rem 2rem 1rem;
 }
 
-/********** swippers ***************/
-
-.card {
-    border-color: rgb(54, 27, 0);
-    color: #fff;
-}
-
-.card-body {
-    background-color: rgb(54, 27, 0);
-}
-
-.card-section__title {
-    color: #ffc20e;
-}
-
-.card-section__title:hover {
-    color: #ffc20e;
-}
-
-.card-section__body {
-    text-align: justify;
-    margin-bottom: 0;
-}
-
-
+/********** general ***************/
 .banner-text {
     padding: 1rem;
     font-size: 2.5rem;
@@ -206,7 +188,12 @@ h3 {
     display: block
 }
 
-
+button a,
+button a:hover,
+button a:focus{
+    text-decoration: none;
+    color:white;
+}
 /*************Footer****************/
 .footer-logo {
     background: #f0efec;

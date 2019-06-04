@@ -60,7 +60,7 @@ router.get('/about', function (req, res) {
         content:'./partials/about.ejs',
         footer:'./partials/footer.ejs',
         scriptFile:'./scriptPartials/about.ejs',
-        my_title: "¿Quienes somos?"
+        my_title: "¿Quiénes somos?"
     })
 });
 

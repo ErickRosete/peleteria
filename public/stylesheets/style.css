@@ -93,14 +93,14 @@ h5 {
     font-weight: 700;
 }
 
-.languaje_control{
+.language_control{
     display:flex;
     flex-direction: row;
     align-items: center;
     padding: 0 1rem;
     color: rgba(255,255,255,.5);
 }
-.navbar_languaje-picker {
+.navbar_language-picker {
     flex-wrap: wrap;
     display: block;
     padding: 0 0.5rem 0 0.2rem;

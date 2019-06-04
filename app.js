@@ -4,14 +4,15 @@ var express = require('express'),
 const http = require('http');
 const hostname = '127.0.0.1';
 const port = 3000;
-const morgan=require("morgan")
-const bodyParser=require("body-parser")
+const morgan = require("morgan")
+const bodyParser = require("body-parser")
+const path = require('path');
 
 
 //settings
 // APP. SET VAMOS A AMACENARLE EL PUERTO (REVISAR SI EL SERVIDOR 
 // TIENE UN PUERTO DEFINIDO SINO EL PUERTO SERA 3000
-app.set("port",process.env.PORT || 3000)
+app.set("port", process.env.PORT || 3000)
 
 //middlewares o funciones que se ejecutan cada vez que se recibe una peticion
 // app.use(morgan("dev"));//app utiliza morgan para mostrar mensajes en consola en su config de dev
@@ -24,9 +25,9 @@ app.use("/", indexRoutes);
 
 //aqui irian los static files
 app.set("view engine", "ejs");
-app.use(express.static(__dirname + "/public"))
+app.use(express.static(path.join(__dirname, "/public")))
 
-app.listen(app.get("port"),()=>{
+app.listen(app.get("port"), () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 });
 
@@ -36,4 +37,3 @@ app.listen(app.get("port"),()=>{
 //     console.log(process.env.PORT);
 //     console.log(`Server running at http://${hostname}:${port}/`);
 // });
-

@@ -1,5 +1,5 @@
 $(function () {
-    var language1 = localStorage.getItem('language') == 'null' ? 'es' : localStorage.getItem('language');
+    var language1 = localStorage.getItem('language') == null ? 'es' : localStorage.getItem('language');
     $(".navbar_language-picker").val(language1);
     setLang(language1);
 

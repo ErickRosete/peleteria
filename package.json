@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/ErickRosete/peleteria.git"
   },
-  "author": "Erick Rosete / Oscar Rosete",
+  "author": "Erick Rosete / Oscar Rosete / Jessica Borja",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ErickRosete/peleteria/issues"
@@ -23,5 +23,9 @@
     "morgan": "^1.9.1",
     "mysql": "^2.16.0",
     "open": "0.0.5"
+  },
+  "engines": {
+    "npm": "6.4.1",
+    "node": "11.3.0"
   }
 }

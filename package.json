@@ -4,7 +4,8 @@
   "description": "La peleteria atlas",
   "main": "app.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,8 @@
   "engines": {
     "npm": "6.4.1",
     "node": "11.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }

@@ -3,7 +3,61 @@
         <h1 key="nav-services" class="lang">Servicios</h1>
     </div>
 
-    <div class="card-deck justify-content-center">
+        <%# microModal %>
+         <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                <h2 class="modal__title" id="modal-1-title">
+                    Micromodal
+                </h2>
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <div class="modal-Container">
+                        <img class="card-img-top modal-Image" src="/assets/services/calzadodama.png">
+                    </div>
+                    <p>
+                    </p>
+                    <ul style=" width: 100%">
+                    <ul>
+                    <%# ;column-count: 2 %>
+                    <%# Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal. %>
+                </main>
+                <footer class="modal__footer">
+                <button class="modal__btn modal__btn-primary">Comprar</button>
+                <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Cerrar</button>
+                </footer>
+            </div>
+            </div>
+        </div>
+        
+        
+        <div class="service-card mb-5 col-6 p-0" id="base" style="display:none;  "> 
+            <div class="card-body">
+                <h5 class="card-title text-center lang" key="womenShoe" style="color:white">Calzado para Dama</h5>
+            </div>
+            <div class="over" style="color:white;      max-width: 500px;" onClick="openModal(this)">
+                <ul class="list-unstyled" style=" width: 100%;">
+                    <li>servicio1</li>
+                    <li>servicio2</li>
+                    <li>servicio2</li>
+                    <li>servicio2</li>
+                    <li>serviciomassuperlargo</li>
+                    <li>servicio2</li>
+                    <li>servicio2</li>
+                </ul>
+                <ul class="list-unstyled" style=" width: 100%;">
+                 <li>Descripcion Extendida<button class="btn btn-dark  m-auto" style="display:inline" onClick="openModal(this)">+</button></li>
+                </ul>
+            </div>
+            <img class="card-img-top" src="/assets/services/calzadodama.png" style="height:300px">
+            <button onClick="openModal(this)" style="cursor:pointer"><i class="fas fa-info-circle fa-3x"></i></button>
+        </div>
+
+
+    <div class="card-deck justify-content-center" id="padre">
+<%# 
         <div class="card service-card mb-5">
             <div class="card-body">
                 <h5 class="card-title text-center lang" key="womenShoe">Calzado para Dama</h5>
@@ -20,7 +74,6 @@
                 </ul>
             </div>
             <img class="card-img-top" src="/assets/services/calzadodama.png" style="height:300px">
-
         </div>
 
         <div class="card service-card mb-5">
@@ -271,7 +324,27 @@
 
         <div class="w-100 d-none d-sm-none d-md-none d-lg-block">
             <!-- wrap every 3 on md-->
+        </div> %>
+
+       <div class="card service-card mb-5">
+            <div class="card-body">
+                <h5 class="card-title text-center lang" key="autoUphols">Tapiceria automotriz</h5>
+            </div>
+            <img class="card-img-top" src="assets/services/tapiceriaautomotriz.png" style="height:300px">
+
+            <div class="over">
+                <ul class="list-unstyled" style="column-count: 2; width: 100%">
+                    <li>servicio1</li>
+                    <li>servicio2</li>
+                    <li>servicio2</li>
+                    <li>servicio2</li>
+                    <li>serviciomassuperlargo</li>
+                    <li>servicio2</li>
+                    <li>servicio2</li>
+                </ul>
+            </div>
         </div>
+
 
         <div class="card service-card mb-5">
             <div class="card-body">
@@ -291,6 +364,13 @@
                 </ul>
             </div>
         </div>
+        
+       <div class="w-100 d-none d-sm-block d-md-block d-lg-none">
+            <!-- wrap every 2 on sm-->
+        </div>
+        <div class="w-100 d-none d-sm-none d-md-none d-lg-block">
+            <!-- wrap every 3 on md-->
+        </div> %>
 
     </div>
 </main>

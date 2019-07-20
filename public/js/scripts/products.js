@@ -1,4 +1,91 @@
+var base= 'https://peleteria-admin.herokuapp.com/';
+// let productos=[
+//     {
+//         nombre:"maletin1",
+//         descripcion:"soy una descripcion extendida1",
+//         costo:"soy un costo",
+//         imagen:"http://localhost:3000/assets/briefcases/bc1.jpg"
+//     },
+//     {
+//         nombre:"maletin2",
+//         descripcion:"soy una descripcion extendida2",
+//         costo:"soy un costo",
+//         imagen:"/assets/briefcases/bc2.jpg"
+//     }
+// ]
+var productos=[]
+
+const generaProductos=(lang)=>{
+    let infoNecesaria;
+    if(lang=="es"){
+        infoNecesaria=productos.map(function (item) {
+            return {nombre: item.titulo,imagen: item.imagen,descripcion:item.descripcion,costo:item.price};
+        })
+    }
+    else if(lang=="en"){
+        infoNecesaria=productos.map(function (item) {
+            return {nombre: item.title, imagen: item.imagen,descripcion:item.description, costo:item.price};
+        })
+    }
+    return infoNecesaria;
+}
+
+const idiomaProductos=(lang)=>{
+    console.log("actualizando productos")
+    console.log("language selected")
+    console.log(lang)
+    let infoNecesaria=generaProductos(lang)
+    actualizaContenido(infoNecesaria);
+}
+
+const actualizaContenido=(productos)=>{
+    console.log("===actualizando")
+    console.log(productos)
+    var contenedor=document.querySelector("#products_content");
+    var tarjeta=document.querySelectorAll(".single-product");
+    let elementosGenerados=[]
+    productos.forEach((producto)=>{
+        var elemento=document.querySelector("#single-product-s").cloneNode(true)
+        elemento.style="display:''"
+        elemento.children[0].children[0].children[0].textContent=producto.nombre
+        elemento.children[0].children[0].children[1].textContent=producto.descripcion
+        elemento.children[0].children[0].children[2].textContent=producto.costo
+        elemento.children[0].children[1].src=producto.imagen
+        elementosGenerados.push(elemento)
+    })
+    var divsp=document.createElement("div")
+    divsp.className="row"
+    elementosGenerados.forEach(function(elemento){
+        divsp.appendChild(elemento)
+    })
+    contenedor.children[0].appendChild(divsp)
+}
+
 $(document).ready(function () {
+    $.ajax({
+        url: base+'api/categories',
+        context: document.body
+    }).done(function(response) {
+        // $( this ).addClass( "done" );
+        console.log(response);
+    });
+
+    $.ajax({
+        url: base+'api/products',
+        context: document.body
+    }).done(function(response) {
+        // console.log(response);
+        productos=response;
+        // console.log(infoNecesaria)
+        let lang = localStorage.getItem('language') == null ? 'es' : localStorage.getItem('language');
+        console.log("language selected")
+        console.log(lang)
+        let infoNecesaria=generaProductos(lang)
+        actualizaContenido(infoNecesaria)
+        // actualizaContenido(infoNecesaria)
+    });
+
+
     $('#sidebarCollapse').on('click', function () {
         $('#sidebar, #products_content,.collapse-btn-container,.sidebar-bg').toggleClass('active');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
@@ -8,6 +95,7 @@ $(document).ready(function () {
     }
     $('.nav-item.active').removeClass('active');
     $('#navbarNav-products').addClass('active');
+
 });
 
 // var base= 'https://peleteria-admin.herokuapp.com/';

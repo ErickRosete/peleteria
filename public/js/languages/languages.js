@@ -17,6 +17,9 @@ $(function () {
         // $('.lang-placeholder').each(function (index, element) {
         //     $(this).attr("placeholder", arrLang[lang][$(this).attr('key')]);
         // });
+        if(window.location.href.includes("products")){
+            idiomaProductos(lang);
+        }
         let cambiables=document.querySelectorAll(".lang")
         cambiables.forEach((elemento)=>{
             // console.log(elemento.textContent)

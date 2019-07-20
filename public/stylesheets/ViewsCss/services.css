@@ -1,13 +1,23 @@
 .service-card {
     max-width: 500px;
     position: relative;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .card {
     border: none;
     color: #fff;
 }
-
+.modal-Image{
+    width:50%;
+    height:300px;
+}
+.modal-Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .card-body {
     background-color: black;
     display: flex;
@@ -27,11 +37,12 @@
     width: 100%;
     height: calc(100% - 68.8px);
     position: absolute;
-    display: flex;
+    /* display: flex; */
+    display:none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 2rem;
+    padding-right: 15px; padding-left: 15px;
     font-size: 1.5rem;
     opacity: 0;
     top:0;

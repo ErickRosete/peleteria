@@ -2,8 +2,8 @@ $(document).ready(function(){
     $('.nav-item.active').removeClass('active');
     $('#navbarNav-services').addClass('active');
 })
-// var base= 'https://peleteria-admin.herokuapp.com/';
-var base= 'http://localhost:4000/';
+var base= 'https://peleteria-admin.herokuapp.com/';
+// var base= 'http://localhost:4000/';
 var servicios=[]
 function genera(descripcion){
     var li=document.createElement("li")

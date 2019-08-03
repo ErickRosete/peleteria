@@ -13,251 +13,73 @@
                 </button>
             </div>
             <div class="sidebar-info">
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
-                            class="dropdown-toggle sidebar-menu-title">Home</a>
-                        <ul class="list-unstyled sidebar-submenu " id="homeSubmenu">
-                            <li>
-                                <a href="#">Home 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Home 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Home 3</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="list-unstyled components">
+                <ul class="list-unstyled components" style="display:none">
                     <li class="active">
                         <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false"
-                            class="dropdown-toggle sidebar-menu-title">Home</a>
-                        <ul class="list-unstyled sidebar-submenu " id="homeSubmenu1">
+                            class="dropdown-toggle sidebar-menu-title" onClick="showMe(this)">Home</a>
+                        <ul class="list-unstyled sidebar-submenu collapse " id="homeSubmenu1">
                             <li>
-                                <a href="#">Home 1</a>
+                                <a href="#">Subcategoria 1</a>
                             </li>
-                            <li>
+                            <%# <li>
                                 <a href="#">Home 2</a>
                             </li>
                             <li>
                                 <a href="#">Home 3</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false"
-                            class="dropdown-toggle sidebar-menu-title">Home</a>
-                        <ul class="list-unstyled sidebar-submenu " id="homeSubmenu2">
-                            <li>
-                                <a href="#">Home 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Home 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Home 3</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false"
-                            class="dropdown-toggle sidebar-menu-title">Home</a>
-                        <ul class="list-unstyled sidebar-submenu " id="homeSubmenu3">
-                            <li>
-                                <a href="#">Home 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Home 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Home 3</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#homeSubmenu4" data-toggle="collapse" aria-expanded="false"
-                            class="dropdown-toggle sidebar-menu-title">Home</a>
-                        <ul class="list-unstyled sidebar-submenu " id="homeSubmenu4">
-                            <li>
-                                <a href="#">Home 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Home 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Home 3</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#homeSubmenu5" data-toggle="collapse" aria-expanded="false"
-                            class="dropdown-toggle sidebar-menu-title">Home</a>
-                        <ul class="list-unstyled sidebar-submenu " id="homeSubmenu5">
-                            <li>
-                                <a href="#">Home 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Home 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Home 3</a>
-                            </li>
+                            </li> %>
                         </ul>
                     </li>
                 </ul>
             </div>
         </nav>
 
+
+        <%# referencia producto %>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" id="single-product-s" style="display:none" onClick="miFuncion(this)">
+            <div class="single-product">
+                <div class="single-product-info">
+                    <h1> Maletin 1</h1>
+                    <p>Esta es una cosa y yo soy una descripción (: </p>
+                    <h3>$50 - $30</h3>
+                </div>
+                <img src="/assets/briefcases/bc1.jpg">
+            </div>
+        </div>
+        <h1 class="col-12" id="title" style="display:none">Maletines</h1>
+
+     <%# microModal %>
+         <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                <h2 class="modal__title" id="modal-1-title">
+                    Micromodal
+                </h2>
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <div class="modal-Container">
+                        <img class="card-img-top modal-Image" src="/assets/services/calzadodama.png">
+                    </div>
+                    <p>
+                    </p>
+                    <ul style=" width: 100%">
+                    <ul>
+                    <%# ;column-count: 2 %>
+                    <%# Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal. %>
+                </main>
+                <footer class="modal__footer">
+                <button class="modal__btn modal__btn-primary">Comprar</button>
+                <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Cerrar</button>
+                </footer>
+            </div>
+            </div>
+        </div>
+
         <!-- Page Content  -->
         <div id="products_content" class="active">
             <div class="container-fluid">
-                <div class="row">
-                    <h1 class="col-12">Maletines</h1>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3" id="single-product-s" style="display:none">
-                        <div class="single-product">
-                            <div class="single-product-info">
-                                <h1> Maletin 1</h1>
-                                <p>Esta es una cosa y yo soy una descripción (: </p>
-                                <h3>$50 - $30</h3>
-                            </div>
-                            <img src="/assets/briefcases/bc1.jpg">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="single-product">
-                            <div class="single-product-info">
-                                <h1> Maletin 1</h1>
-                                <p>Esta es una cosa y yo soy una descripción (: </p>
-                                <h3>$50 - $30</h3>
-                            </div>
-                            <img src="/assets/briefcases/bc1.jpg">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="single-product">
-                            <div class="single-product-info">
-                                <h1> Maletin 1</h1>
-                                <p>Esta es una cosa y yo soy una descripción (: </p>
-                                <h3>$50 - $30</h3>
-                            </div>
-                            <img src="/assets/briefcases/bc1.jpg">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="single-product">
-                            <div class="single-product-info">
-                                <h1> Maletin 1</h1>
-                                <p>Esta es una cosa y yo soy una descripción (: </p>
-                                <h3>$50 - $30</h3>
-                            </div>
-                            <img src="/assets/briefcases/bc1.jpg">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="single-product">
-                            <div class="single-product-info">
-                                <h1> Maletin 1</h1>
-                                <p>Esta es una cosa y yo soy una descripción (: </p>
-                                <h3>$50 - $30</h3>
-                            </div>
-                            <img src="/assets/briefcases/bc1.jpg">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="single-product">
-                            <div class="single-product-info">
-                                <h1> Maletin 1</h1>
-                                <p>Esta es una cosa y yo soy una descripción (: </p>
-                                <h3>$50 - $30</h3>
-                            </div>
-                            <img src="/assets/briefcases/bc1.jpg">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="single-product">
-                            <div class="single-product-info">
-                                <h1> Maletin 1</h1>
-                                <p>Esta es una cosa y yo soy una descripción (: </p>
-                                <h3>$50 - $30</h3>
-                            </div>
-                            <img src="/assets/briefcases/bc1.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <h1 class="col-12">Maletines</h1>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="single-product">
-                            <div class="single-product-info">
-                                <h1> Maletin 1</h1>
-                                <p>Esta es una cosa y yo soy una descripción (: </p>
-                                <h3>$50 - $30</h3>
-                            </div>
-                            <img src="/assets/briefcases/bc1.jpg">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="single-product">
-                            <div class="single-product-info">
-                                <h1> Maletin 1</h1>
-                                <p>Esta es una cosa y yo soy una descripción (: </p>
-                                <h3>$50 - $30</h3>
-                            </div>
-                            <img src="/assets/briefcases/bc1.jpg">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="single-product">
-                            <div class="single-product-info">
-                                <h1> Maletin 1</h1>
-                                <p>Esta es una cosa y yo soy una descripción (: </p>
-                                <h3>$50 - $30</h3>
-                            </div>
-                            <img src="/assets/briefcases/bc1.jpg">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="single-product">
-                            <div class="single-product-info">
-                                <h1> Maletin 1</h1>
-                                <p>Esta es una cosa y yo soy una descripción (: </p>
-                                <h3>$50 - $30</h3>
-                            </div>
-                            <img src="/assets/briefcases/bc1.jpg">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="single-product">
-                            <div class="single-product-info">
-                                <h1> Maletin 1</h1>
-                                <p>Esta es una cosa y yo soy una descripción (: </p>
-                                <h3>$50 - $30</h3>
-                            </div>
-                            <img src="/assets/briefcases/bc1.jpg">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="single-product">
-                            <div class="single-product-info">
-                                <h1> Maletin 1</h1>
-                                <p>Esta es una cosa y yo soy una descripción (: </p>
-                                <h3>$50 - $30</h3>
-                            </div>
-                            <img src="/assets/briefcases/bc1.jpg">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
+                <div class="row" style="display:none">
                     <h1 class="col-12">Maletines</h1>
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="single-product">

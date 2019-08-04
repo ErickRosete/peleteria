@@ -23,7 +23,11 @@ section.contact_us_area {
     justify-content: baseline;
     color:black;
 }
-.strong{font-weight: bold;}
+.strong{
+    font-weight: bold;
+    margin-bottom:0;
+    /* padding: 0; */
+}
 .informacion a{ color:black}
 .informacion a:hover{
     color: #b28735;
@@ -35,7 +39,7 @@ section.contact_us_area {
 }
 
 .informacion p {
-    padding: 0.5rem 0;
+    /* padding: 0.5rem 0; */
 }
 
 .modal-message .modal-dialog {
@@ -81,6 +85,6 @@ section.contact_us_area {
 
 @media screen and (min-width: 768px) {
     .informacion h1 {
-        padding: 0 0 4rem 0;
+        padding: 0 0 3rem 0;
     }
 }

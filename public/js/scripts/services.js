@@ -62,12 +62,16 @@ $.ajax({
     console.log("====Servicios")
     console.log(response);
     servicios=response;
+    //=====ordering services
+    servicios.sort((a, b) => parseFloat(a.order) - parseFloat(b.order));
+    console.log("===ordered services")
+    console.log(servicios)
     var contenedor=document.querySelector("#base");
-    console.log(contenedor)
+    // console.log(contenedor)
     servicios.forEach((servicio,i)=>{
         var elemento=contenedor.cloneNode(true)
         elemento.style="display:''"
-        console.log(elemento.children[1])
+        // console.log(elemento.children[1])
         elemento.children[1].setAttribute("data-id", i);
         elemento.children[3].setAttribute("data-id", i);
 

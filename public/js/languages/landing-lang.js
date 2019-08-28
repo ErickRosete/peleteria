@@ -17,8 +17,16 @@ var stringObj = {
         herramientas, artículos de limpieza, también contamos
         con la venta de monturas charras y vaqueras.`,
         'catalogue': 'Ir a nuestro catálogo',
-        'carousel-h1':'Hasta 12 meses sin intereses con paypal o 15% en pago directo!',
-        'carousel-sub':' Compra mínima de $3500 pesos',
+        // 'carousel-h1':'Hasta 12 meses sin intereses con paypal o 15% en pago directo!',
+        'carousel-h1':
+        `Contamos con distintos tipos de pieles...
+        Forros, vestimenta, napa, corte, tapiceria
+        oscarias, gamuzas, salea de borrego, carnazas
+        baqueta, sillero,  suela centro y delantero .
+        `,
+        'carousel-sub':`Cubriendo las necesidades para cualquier proyecto
+        de marroquineria, talabartería, calzado y tapicería.`,
+        // 'carousel-sub':' Compra mínima de $3500 pesos',
         'carousel2-h1':'Venta de carteras, bolsas, botas...',
         'carousel2-sub':'Hechas con materiales 100% genuinos.',
     }

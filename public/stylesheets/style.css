@@ -249,6 +249,27 @@ button a:focus{
 .footer-mobil-hide{
     display:none;
 }
+
+@media screen and (max-width: 768px) {
+    /* footer */
+    .col-12.col-md-5.pb-4{
+        margin-top:3rem;
+    }
+    h1.lang{
+        /* text-align: center */
+    }
+    .col-12.col-md-2.pl-0.pb-3.center-content{
+        padding: 0;
+    }
+    .pr-5{
+        padding-right: 0px;
+    }
+    .footer-info {
+        padding: 2rem 1rem;
+    }
+    /* end footer */
+    
+}
 /*************Footer****************/
 
 /* Primary Styles */

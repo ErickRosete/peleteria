@@ -83,8 +83,28 @@ section.contact_us_area {
     display: block;
 }
 
+section.map{
+    padding: 20px;
+}
+
+.col-12.col-md-2.pl-0.pb-3.center-content{
+    padding-right: 3rem;
+}
+
 @media screen and (min-width: 768px) {
     .informacion h1 {
         padding: 0 0 3rem 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+ 
+    .col-12{
+        padding: 0;
+    }
+    section.map{
+        padding: 0;
+        height: 50vh;
+        margin-bottom: 1rem;
     }
 }

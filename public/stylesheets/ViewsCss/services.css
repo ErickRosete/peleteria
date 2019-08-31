@@ -71,9 +71,36 @@
 .card-deck{
     padding: 3rem 1rem;
 }
-
+#sello-image{
+    margin:0
+}
 @media screen and (min-width: 768px) {
     .card-deck{
         padding: 3rem;
+    }
+    /* .card-img-top{
+        height: 100vh;
+    } */
+  
+}
+
+@media screen and (max-width: 768px) {
+    .card-deck.justify-content-center{
+        /* background-color: blue;  */
+        padding: 0rem;
+    }
+    .service-card{
+        margin-right:0;
+        margin-left:0;
+    }
+    main.container-fluid.justify-content-center.bg-lightBrown{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    div.modal__container{
+        max-width: 90vw;
+    }
+    .modal-Image{
+        height: 30vh;
     }
 }

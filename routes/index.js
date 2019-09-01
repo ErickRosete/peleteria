@@ -6,7 +6,7 @@ var router = express.Router()
 router.get('/', function (req, res) {
     res.render("site",{
         header:"./partials/header",
-        cssFile:"",
+        cssFile:"./partialStylesheets/landing.ejs",
         navbar:'./partials/navbar.ejs',
         content:'./partials/landing.ejs',
         footer:'./partials/footer.ejs',
@@ -16,12 +16,20 @@ router.get('/', function (req, res) {
 });
 
 router.get('/products', function (req, res) {
-    // res.render("products") 
+    // res.render("site",{
+    //     header:"./partials/header",
+    //     cssFile:"./partialStylesheets/products.ejs",
+    //     navbar:'./partials/navbar.ejs',
+    //     content:'./partials/products.ejs',
+    //     footer:'./partials/footer.ejs',
+    //     scriptFile:'./scriptPartials/products.ejs',
+    //     my_title: "Productos"
+    // })
     res.render("site",{
         header:"./partials/header",
         cssFile:"./partialStylesheets/products.ejs",
         navbar:'./partials/navbar.ejs',
-        content:'./partials/products.ejs',
+        content:'./partials/product2.ejs',
         footer:'./partials/footer.ejs',
         scriptFile:'./scriptPartials/products.ejs',
         my_title: "Productos"

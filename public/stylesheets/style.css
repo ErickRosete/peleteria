@@ -39,7 +39,7 @@ h5 {
 }
 
 .bg-lightBrown {
-    background: #f0efec;
+    background: #e2e2e2;
 }
 
 .bg-darkBrown {
@@ -269,6 +269,11 @@ button a:focus{
     }
     /* end footer */
     
+}
+@media screen and (min-width: 768px) {
+    #mobile-info{
+        display:none;
+    }
 }
 /*************Footer****************/
 

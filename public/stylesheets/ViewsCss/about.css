@@ -67,20 +67,32 @@
 
 .centered-text{
     position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   color: black;
   font-size:2rem;
   font-weight: bolder;
   width:90%;
     text-align: justify
 }
-.col-6>h2{
-    font-size:5rem;
+
+.col-6>p.title{
+    font-size:2.5rem;
     text-align: center;
-    background-color: #412f26;
-    color:white;
+    padding:0;
+    font-weight: bold;
+    margin:0;
+    /* background-color: #412f26; */
+    /* color:white; */
+}
+
+img#back{
+    height:80vh;
+}
+.col-12.text-center>h2{
+    font-size:7rem;
+    text-align: center;
 }
 
 h3{

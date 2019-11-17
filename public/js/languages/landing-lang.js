@@ -28,8 +28,20 @@ var stringObj = {
         de marroquineria, talabartería, calzado y tapicería.`,
         // 'carousel-sub':' Compra mínima de $3500 pesos',
         'carousel2-h1':'Venta de carteras, bolsas, botas...',
-        'carousel2-sub':'Hechas con materiales 100% genuinos.',
-    }
+        'carousel-h2':`Gran surtido de herrajes para distintos tipos de procesos de elaboración como Calzado, Talabarteria, Marroquineria, Tapicería, Lonas Imprentas, Publicistas  y  Confección en general.`,
+        'carousel-sub2':` Hebillas, argollas, ojillos, remaches, bandolas
+            broches, chapas, estoperoles y mucho mas...`,
+        'carousel-h3':`Distintos tipos de herramientas especializadas
+            para cada  tipo de oficio, zapateros, talabarteros
+            marroquineros, loneros, tapiceros y confección,
+            desde lo mas básico a lo profesional , precio y calidad ..`,
+        'carousel-sub3':` !!      Venga  y  visítenos    !!`,
+        'carousel-h4':`Nuestra linea clásica en productos para el aseo y mantenimiento
+            de su calzado y demás artículos de piel que lo requieren.`,
+        'carousel-sub4':`Tintas, pinturas, cremas, grasas, cepillos, brochuelos, limpiadores
+            aceites y suavizantes, propios para cada tipo de accesorios...`,
+        'carousel2-sub':'Hechas con material es 100% genuinos.',
+        }
 }
 
 arrLang = {

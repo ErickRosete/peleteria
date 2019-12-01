@@ -48,12 +48,21 @@ body{
 /* #carousel{
     height:50vh;
 } */
+.carousel-item{
+    /* height:70vh;[ */
+}
 .carousel-item> img{
-    height:70vh;
+    /* Fit logo in the image size */
+
+    height:60vh;
+    width:100%;
+    /* height:auto;
+  
+    object-fit: contain;  */
 }
 
-.imageBackground{
+/* .imageBackground{
     position: relative;
     text-align: center;
     color: white;
-}
+} */

@@ -9,7 +9,9 @@ $('#carousel').on('slid.bs.carousel', function () {
         updateSlide()
         }
 })
-
+// https://stackoverflow.com/questions/16974664/remove-extra-spaces-in-string-javascript
+// https://stackoverflow.com/questions/3437786/get-the-size-of-the-screen-current-web-page-and-browser-window
+// https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio
   function updateSlide(){
     let textContainers=document.querySelectorAll("div.active")[0].children[1].children
     let h1=textContainers[0].textContent

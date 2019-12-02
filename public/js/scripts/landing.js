@@ -5,9 +5,9 @@ $('#carousel').on('slid.bs.carousel', function () {
     || document.documentElement.clientWidth
     || document.body.clientWidth;
         console.log(width)
-        if(width<768){
+        // if(width<768){
         updateSlide()
-        }
+        // }
 })
 // https://stackoverflow.com/questions/16974664/remove-extra-spaces-in-string-javascript
 // https://stackoverflow.com/questions/3437786/get-the-size-of-the-screen-current-web-page-and-browser-window
@@ -45,6 +45,6 @@ $('#carousel').on('slid.bs.carousel', function () {
     || document.documentElement.clientWidth
     || document.body.clientWidth;
     console.log(width)
-    if(width<768){
+    // if(width<768){
         updateSlide()
-    }
+    // }

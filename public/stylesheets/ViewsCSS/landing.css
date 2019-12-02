@@ -22,22 +22,30 @@ body{
     }
     .landing-description{
         display:none;
-    }
-    #mobile-description{
-        padding:4vw
-    }
-    .desc-1{
-        text-align: center;
-        font-weight: bold;
-    }
-    .desc-2{
-        text-align: justify;
-    }
-    .desc-3{
-        text-align: center;
-    }
-   
+    }   
 }
+
+#mobile-description{
+    padding:1vh 4vw;
+}
+.desc-1{
+    /* text-align: center; */
+    font-weight: bold;
+}
+.desc-2{
+    /* text-align: justify; */
+}
+.desc-3{
+    /* text-align: center; */
+}
+.desc-1,.desc-2,.desc-3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.carousel-caption{
+    display:none !important;
+}
+
 
 .carousel_landing{
     padding: 0;

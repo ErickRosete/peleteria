@@ -91,11 +91,16 @@
 }
 
 img#back{
+    padding: 0vh 2vw;
     height:80vh;
 }
 .col-12.text-center>h2{
     font-size:7rem;
     text-align: center;
+}
+.col-6{
+    font-size: 1.5rem;
+    padding:0vh 2vw;
 }
 
 h3{

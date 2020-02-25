@@ -67,20 +67,14 @@ $.ajax({
     console.log("===ordered services")
     console.log(servicios)
     var contenedor=document.querySelector("#base");
-    // console.log(contenedor)
     servicios.forEach((servicio,i)=>{
         var elemento=contenedor.cloneNode(true)
         elemento.style="display:''"
-        // console.log(elemento.children[1])
         elemento.children[1].setAttribute("data-id", i);
-        elemento.children[3].setAttribute("data-id", i);
-
-        // console.log(elemento.children[1].children[0])
-        
+        elemento.children[3].setAttribute("data-id", i);        
         elemento.children[1].children[0].innerHTML=""
         var descripciones=servicio.descripcion.split(/\n/);
         var lis=[]
-        // console.log("===cantidad de texto")
         let len=0;
         let liQuant=0;
         descripciones.forEach((descripcion)=>{
@@ -90,26 +84,6 @@ $.ajax({
             }
             len+=descripcion.length;
         })
-        // console.log(`Cantidad de texto: ${len}`)
-        // console.log(`cantidad de lis ${liQuant}`)
-
-        lis.forEach((li)=>{
-            // elemento.children[1].children[0].appendChild(li)
-        })
-        // var div=document.createElement("div")
-        // var li=document.createElement("li")
-        // let lang = localStorage.getItem('language') == null ? 'es' : localStorage.getItem('language');
-        // console.log(`lenguaje es ${lang}`)
-        // li.textContent="Descripcion extendida"
-        // li.style.display="inline"
-        // div.appendChild(li)
-        // let btn=document.createElement("Button")
-        // btn.className="btn btn-dark  m-auto"
-        // btn.style.display="inline";
-        // btn.innerText="+"
-        // console.log(btn)
-        // div.appendChild(btn)
-        // elemento.children[1].children[0].appendChild(div)
         console.log(servicio.titulo.length)
         console.log(servicio.titulo)
         elemento.children[0].children[0].textContent=servicio.titulo

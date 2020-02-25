@@ -1,23 +1,73 @@
-.service-card {
-    max-width: 500px;
-    position: relative;
-    margin-right: 15px;
-    margin-left: 15px;
+.serviceContainer{
+    display: flex;
+    flex-wrap:wrap;
+    padding:0vh 3vw;
+    justify-content: center;
 }
 
-.card {
-    border: none;
-    color: #fff;
-}
-.modal-Image{
-    width:50%;
-    height:300px;
-}
+
 .modal-Container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.modal__container{
+    padding:0vh 2vw !important;
+    padding-bottom:1vh !important;
+    width:80vw;
+    max-width:80vw!important;
+}
+
+.modal__content{
+    margin-top: 0 !important;
+}
+.modal-Image{
+    width:40vh;
+    /* height:300px; */
+}
+@media screen and (min-width: 992px) {
+    .service-card {
+        flex: 0 0 31%;
+        margin-right: 3%;
+    }
+    .service-card:nth-child(3n) {
+        margin-right: 0%;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .service-card {
+        flex: 0 0 47%;
+        margin-right: 2%;
+    }
+    .service-card:nth-child(2n) {
+        margin-right: 0%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .service-card {
+        flex: 0 0 100%;
+        /* margin-right: 2%; */
+    }
+    /* .service-card:nth-child(2n) {
+        margin-right: 0%;
+    } */
+    .card-img-top{
+        /* height:30vh; */
+        width: 100%; 
+    }
+    .serviceContainer{
+        padding:0vh 10vw;
+    }
+}
+
+
+.card {
+    border: none;
+    color: #fff;
+}
+
 .card-body {
     background-color: black;
     display: flex;
@@ -88,10 +138,6 @@
     .card-deck.justify-content-center{
         /* background-color: blue;  */
         padding: 0rem;
-    }
-    .service-card{
-        margin-right:0;
-        margin-left:0;
     }
     main.container-fluid.justify-content-center.bg-lightBrown{
         padding-left: 0;

@@ -94,7 +94,7 @@ $.ajax({
         // console.log(`cantidad de lis ${liQuant}`)
 
         lis.forEach((li)=>{
-            elemento.children[1].children[0].appendChild(li)
+            // elemento.children[1].children[0].appendChild(li)
         })
         // var div=document.createElement("div")
         // var li=document.createElement("li")
@@ -110,7 +110,8 @@ $.ajax({
         // console.log(btn)
         // div.appendChild(btn)
         // elemento.children[1].children[0].appendChild(div)
-
+        console.log(servicio.titulo.length)
+        console.log(servicio.titulo)
         elemento.children[0].children[0].textContent=servicio.titulo
         elemento.children[2].src=servicio.imagen
         var padre=document.querySelector("#padre");

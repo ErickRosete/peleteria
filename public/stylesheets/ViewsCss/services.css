@@ -54,9 +54,9 @@ li{
     .service-card {
         flex: 0 0 100%;
     }
-    .card-img-top{
+    /* .card-img-top{
         width: 100%; 
-    }
+    } */
     .serviceContainer{
         padding:0vh 10vw;
     }

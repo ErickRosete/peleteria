@@ -22,7 +22,8 @@
     margin-top: 0 !important;
 }
 .modal-Image{
-    width:40vh;
+    height:40vh;
+    width:auto;
     /* height:300px; */
 }
 @media screen and (min-width: 992px) {
@@ -146,7 +147,7 @@
     div.modal__container{
         max-width: 90vw;
     }
-    .modal-Image{
+    /* .modal-Image{
         height: 30vh;
-    }
+    } */
 }

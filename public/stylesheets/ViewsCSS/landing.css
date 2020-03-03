@@ -13,7 +13,6 @@ body{
     } */
 
     .carousel_landing{
-        /* margin:0; */
         margin-bottom:1rem;
         padding:0;
     }
@@ -26,10 +25,11 @@ body{
 }
 
 #mobile-description{
-    padding:1vh 4vw;
+    /* removed 03/02/2020 */
+    /* padding:1vh 4vw; */
+    padding:0;
 }
 .desc-1{
-    /* text-align: center; */
     font-weight: bold;
     font-family: 'Tangerine', cursive;
     font-size: 4rem;
@@ -42,7 +42,9 @@ body{
  }
  
  .desc-2,.desc-3{
-    text-align: center;
+    /* removed 03/02/2020 */
+    /* text-align: center; */
+    text-align: justify;
     font-size: 1.5rem;
 }
  @media only screen and (max-width: 500px){ 
@@ -77,9 +79,9 @@ body{
 
 .carousel_landing{
     padding: 0;
-    /* height: 50vh; */
     margin-bottom:1rem;
-    margin-top:2rem;
+    /* removed 03/02/2020 */
+    /* margin-top:2rem; */
 }
 /* #carousel{
     height:50vh;

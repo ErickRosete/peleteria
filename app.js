@@ -3,7 +3,7 @@ var express = require('express'),
 
 const http = require('http');
 const hostname = '127.0.0.1';
-const port = 3000;
+const port = 8080;
 const morgan = require("morgan")
 const bodyParser = require("body-parser")
 const path = require('path');
@@ -12,7 +12,7 @@ const path = require('path');
 //settings
 // APP. SET VAMOS A AMACENARLE EL PUERTO (REVISAR SI EL SERVIDOR 
 // TIENE UN PUERTO DEFINIDO SINO EL PUERTO SERA 3000
-app.set("port", process.env.PORT || 3000)
+app.set("port", process.env.PORT || 8080)
 
 //middlewares o funciones que se ejecutan cada vez que se recibe una peticion
 // app.use(morgan("dev"));//app utiliza morgan para mostrar mensajes en consola en su config de dev

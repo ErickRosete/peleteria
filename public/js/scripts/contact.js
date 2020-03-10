@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     // $('#phone').mask('(000) 000-0000');
     $('.nav-item.active').removeClass('active');
@@ -32,7 +33,7 @@ function enviar(){
         // traditional: true,
         success: function (data) {
                 console.log(data)
-                // swal("Created new User!", "Continue with the creation of your widget", "success");
+                swal("Correo enviado!", "Nos pondremos en contacto contigo", "success");
                 // swal("Usuario creado!", "Revisa tu correo para continuar con la creación del widget", "success");
             },
         error: function (error) {

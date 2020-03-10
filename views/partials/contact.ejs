@@ -13,7 +13,7 @@
                             <h1 class="text-center pb-4 lang" key="sendamsg">¡Envía un mensaje!</h1>
                             <%# <p class="lang" key="desc1">¿Tienes alguna duda o pedido especial? ¡No hay problema! Con gusto lo resolvemos.</p> %>
                         </div>
-                        <form class="contact_us_form row" method="post" id="contactForm" onsubmit="return enviar()">
+                        <form class="contact_us_form row" method="post" id="contactForm" onsubmit="event.preventDefault();enviar()">
                             <div class="form-group col-lg-12">
                                 <input type="text" class="form-control lang-placeholder" id="name" name="name"
                                     placeholder="Nombre" required key="name">

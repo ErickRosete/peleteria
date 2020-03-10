@@ -71,8 +71,8 @@ router.get('/contact', function (req, res) {
 
 sendMail=(newUser,req,res,created)=>{
     console.log("sendEmail")
-    const vendedorEmail="oscaralonso11@hotmail.com"
-    // const vendedorEmail="atlas_leatherdist@hotmail.com"
+    // const vendedorEmail="oscaralonso11@hotmail.com"
+    const vendedorEmail="atlas_leatherdist@hotmail.com"
     
     let base_url=newUser.webpage;
     // const confirmUrL="http://localhost:8080/confirm"

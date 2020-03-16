@@ -8,6 +8,11 @@ const morgan = require("morgan")
 const bodyParser = require("body-parser")
 const path = require('path');
 
+var mongoose=require("mongoose");
+url=`mongodb://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@ds161104.mlab.com:61104/${process.env.MONGO_DB}`
+
+// mongoose.connect("mongodb://localhost/rest_test");
+mongoose.connect(url,{ useNewUrlParser: true, useUnifiedTopology: true } );
 
 //settings
 // APP. SET VAMOS A AMACENARLE EL PUERTO (REVISAR SI EL SERVIDOR 

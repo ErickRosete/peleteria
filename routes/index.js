@@ -9,6 +9,7 @@ const {redspiraHtml} =require("../helpers/widget/redspiraTemplate")
 const {finalHtml} =require("../helpers/widget/redspiraWidget")
 const {htmlContent2} =require("../helpers/Email/clienteRedspira")
 const {sendEmail} =require("../helpers/Email/sendEmail")
+var Service=require("../models/peleteriaservice")
 
 
 
@@ -44,6 +45,18 @@ router.get('/products', function (req, res) {
         my_title: "Productos"
     })
 });
+
+router.get('/api/services', function (req, res) {
+    Service.find({}, function(err, services) {
+        if(err){
+
+        }
+        else{
+            console.log("api services")
+            res.send(services)
+        }
+    })
+})
 
 router.get('/services', function (req, res) {
     res.render("site",{

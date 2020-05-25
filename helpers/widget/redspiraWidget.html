@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body{
+            /* background-color: red */
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container{
+            background-color: yellow;
+            padding:4vw;
+        }
+        .title{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            /* color:#58595b; */
+            font-weight: bold;
+            text-align: center;
+        }
+        .place{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            color:#58595b;
+            text-align: center;
+            font-weight: bold;
+        }
+        .flex-container {
+            display: flex;
+        }
+        .eq1{
+            width:50vw
+        }
+        .eq2{
+            width:50vw
+        }
+        #number{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4rem;
+            font-weight: bold;
+            margin:0;
+            text-align: center;
+        }
+        #AQI{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            color:#58595b;
+            text-align: center;
+            font-weight: bold;
+        }
+        .recomendacion{
+            font-size: 1.5rem;
+            color:#58595b;
+            text-align: center;
+            font-weight: bold;
+        }
+        #recomendacion2{
+            font-size: 2rem;
+            color:#58595b;
+            text-align: center;
+            font-weight: bold;
+        }
+        #green{
+            /* Large rounded green border */
+            border: 5px solid #4db04e;
+            border-radius: 5px;
+        }
+    </style>
+    <!-- finalHtml -->
+    <div name="redspira_widget" key="${userWidget.id}"></div>
+    <script type="text/javascript" src="${userWidget.url}"></script>
+    <div class="container">
+        <p class="title">
+            COLONIA INDEPENDENCIA
+        </p>
+        <p class="place">Mexicali,B.C</p>
+        <div class="flex-container">
+            <div class="eq1">
+                <p id="number">101</p>
+                <p id="AQI">AQI</p>
+            </div>
+            <div class="eq1">
+                <p class="recomendacion">INSALUBRE PARA GRUPOS SENSIBLES</p>
+            </div>
+        </div>
+        <hr id="green">
+        <p id="recomendacion2">Recomendaciones de salud</p>
+        <div class="flex-container">
+            <div class="eq2">
+                <img src="/iconos/banderas-05.svg">
+            </div> 
+            <div class="eq2">
+                <p class="recomendacion">no salgas si eres asmatico</p>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

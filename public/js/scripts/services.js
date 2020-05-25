@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.nav-item.active').removeClass('active');
     $('#navbarNav-services').addClass('active');
 })
-var base= 'https://peleteria-admin.herokuapp.com/';
+// var base= 'https://peleteria-admin.herokuapp.com/';
 // var base= 'http://localhost:4000/';
 var servicios=[]
 function genera(descripcion){
@@ -56,7 +56,8 @@ function openModal(pressed){
 
 
 $.ajax({
-    url: base+'api/services',
+    // url: base+'api/services',
+    url: './api/services',
     context: document.body
 }).done(function(response) {
     console.log("====Servicios")

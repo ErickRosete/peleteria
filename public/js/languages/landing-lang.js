@@ -40,6 +40,10 @@ var stringObj = {
             de su calzado y demás artículos de piel que lo requieren.`,
         'carousel-sub4':`Tintas, pinturas, cremas, grasas, cepillos, brochuelos, limpiadores
             aceites y suavizantes, propios para cada tipo de accesorios...`,
+        'carousel-h5':`Nuestra linea clásica en productos para el aseo y mantenimiento
+            de su calzado y demás artículos de piel que lo requieren.`,
+        'carousel-sub5':`Tintas, pinturas, cremas, grasas, cepillos, brochuelos, limpiadores
+            aceites y suavizantes, propios para cada tipo de accesorios...`,
         'carousel2-sub':'Hechas con material es 100% genuinos.',
         }
 }
